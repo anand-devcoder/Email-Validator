@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --navbar-bg-color: #2d323b;
+    --main-color: #f3a712;
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navbar-bg-color);
+    color: var(--text-color);
+    padding: 19px 12px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul li a:hover {
+    color: var(--main-color);
+}
+
+.index .home {
+    background: var(--bg-color);
+    /* min-height: 85.5vh; */
+    padding: 2px;
+}
+
+.logo img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.logo span {
+    color: var(--text-color);
+}
+
+span {
+    color: var(--main-color);
+}
+
+.indicators h2 {
+    text-align: center;
+}
+
+table {
+    margin: 50px auto;
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    color: var(--text-color);
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: black;
+}
+
+tr:hover {
+    background-color: black;
+}
+
+.index .container {
+    /* max-width: 90vw; */
+    padding: 15px;
+}
+
+.index .container h1 {
+    padding: 12px;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.about {
+    background: var(--bg-color);
+    min-height: 85vh;
+    padding: 2px;
+}
+
+.about .container h1 {
+    padding: 12px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.about .container p {
+    margin-top: 1.1rem;
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.about .container h1 {
+    text-align: center;
+}
+
+.about .container {
+    max-width: 90vw;
+    padding: 15px;
+}
+
+.about .description {
+    /* display: flex;
+    column-gap: 20rem; */
+    color: var(--text-color);
+    padding: 15px;
+}
+
+.about .description .technology-stack h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.about .description .key-features h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.about .description .technology-stack li {
+    margin-top: 2.8rem;
+    padding-left: 15px;
+}
+
+.about .description .key-features li {
+    margin-top: 23px;
+}
+
+.index .container h2 {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.index input[type="text"] {
+    background-color: var(--text-color);
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultCont tr td::first-letter {
+    text-transform: uppercase;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.contact {
+    background: var(--bg-color);
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5px;
+    font-size: 1.6vw;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .3rem 0;
+    margin: 2px;
+}
+
+.contact form .input-box input {
+    width: 34.4rem;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    /* margin-top: 2rem; */
+    cursor: pointer;
+}
+
+footer {
+    font-size: 12px;
+    background-color: var(--navbar-bg-color);
+    color: var(--text-color);
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        font-size: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+
+    .logo span {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 15px;
+        filter: invert(1);
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 450px) {
+    .contact form .input-box input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;         
+    }
+
+    .footer {
+        margin-top: 51rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 991px) {
+    .footer {
+        margin-top: 84rem;
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 92rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .footer {
+        margin-top: 100rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 365px) {
+    .footer {
+        margin-top: 105rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.popup {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    /* Green by default */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.popup.error {
+    background-color: #f44336;
+    /* Red for error */
+}
+
+.popup span {
+    display: inline-block;
+}

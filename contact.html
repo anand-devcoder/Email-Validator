@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <link rel="shortcut icon" href="images/email.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="about">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/email.svg" alt="Logo">
+                <span>Email Validator</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="d:\Html-Css-Javascript Projects\Email Validator\contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a4184500-87be-4ba1-99f5-bf46a11f8acc">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="text" name="phone" placeholder="Mobile Number" required>
+                <input type="text" name="email-subject" placeholder="Email Subject" required>
+            </div>
+            <textarea name="email-message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">           
+        </form>
+        <div id="popupMessage" class="popup">
+            <span id="popupIcon"></span>
+            <span id="popupText"></span>
+        </div>        
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Email Validator | All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

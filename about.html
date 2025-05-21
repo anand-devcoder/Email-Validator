@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <link rel="shortcut icon" href="images/email.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="about">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/email.svg" alt="Logo">
+                <span>Email Validator</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about" id="about">
+        <div class="container">
+            <h1><span>Email Validator</span></h1>
+            <p>The Email Validator is a simple web-based application developed using HTML, CSS, and JavaScript. This
+                project allows users to input an email address and instantly checks whether the entered email is valid
+                based on standard email formatting rules. The validation is performed using JavaScript, providing
+                instant feedback to the user.</p>
+        </div>
+        <div class="description">
+            <div class="technology-stack">
+                <h2><span>Technology Stack</span></h2>
+                <ol>
+                    <li><strong>HTML : </strong>Structure of the web page</li>
+                    <li><strong>CSS : </strong>Styling the input form and feedback messages</li>
+                    <li><strong>JavaScript : </strong>Logic for validating the email format</li>
+                </ol>
+            </div>
+            <div class="key-features">
+                <h2><span>Key Features</span></h2>
+                <ol>
+                    <li>Email format validation using JavaScript</li>
+                    <li>Real-time validation with instant feedback</li>
+                    <li>Clean and responsive UI</li>
+                    <li>Highlight valid and invalid email entries with color indicators or messages</li>
+                    <li>Simple and easy to integrate into any website or form</li>
+                </ol>
+            </div>
+        </div>
+        <div class="indicators">
+            <div class="valid-indicator">
+                <h2><span>Validation Indicators</span></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Field</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Tag</td>
+                            <td>No tag used in the email.</td>
+                        </tr>
+                        <tr>
+                            <td>Free</td>
+                            <td>Email is from a free provider (Gmail).</td>
+                        </tr>
+                        <tr>
+                            <td>Role</td>
+                            <td>Not a role-based email address.</td>
+                        </tr>
+                        <tr>
+                            <td>User</td>
+                            <td>Username part of the email.</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Full email address checked.</td>
+                        </tr>
+                        <tr>
+                            <td>Score</td>
+                            <td>Moderate confidence score.</td>
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td>Email is deliverable and active.</td>
+                        </tr>
+                        <tr>
+                            <td>Domain</td>
+                            <td>Domain part of the email.</td>
+                        </tr>
+                        <tr>
+                            <td>Reason</td>
+                            <td>Mailbox is valid and reachable.</td>
+                        </tr>
+                        <tr>
+                            <td>Mx_found</td>
+                            <td>MX records found; domain can receive emails.</td>
+                        </tr>
+                        <tr>
+                            <td>Catch_all</td>
+                            <td>No catch-all configuration detected.</td>
+                        </tr>
+                        <tr>
+                            <td>Disposable</td>
+                            <td>Not a disposable/temporary email address.</td>
+                        </tr>
+                        <tr>
+                            <td>Smtp_check</td>
+                            <td>SMTP check passed; mailbox exists.</td>
+                        </tr>
+                        <tr>
+                            <td>Did_you_mean</td>
+                            <td>No suggestion; domain is correct.</td>
+                        </tr>
+                        <tr>
+                            <td>Format_valid</td>
+                            <td>Email format is valid.</td>
+                        </tr>
+                        </tbody>
+                </table>
+
+            </div>
+            <div class="overall-validation">
+                <h2><span>Overall Validation Status</span></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Validation Criteria</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Format Valid</td>
+                            <td>Email structure is correct</td>
+                        </tr>
+                        <tr>
+                            <td>MX Record Found</td>
+                            <td>Domain can receive emails</td>
+                        </tr>
+                        <tr>
+                            <td>SMTP Check Passed</td>
+                            <td>Mailbox is reachable</td>
+                        </tr>
+                        <tr>
+                            <td>Disposable Email</td>
+                            <td>Permanent, not a temp email</td>
+                        </tr>
+                        <tr>
+                            <td>Role-Based</td>
+                            <td>Personal, not a role email</td>
+                        </tr>
+                        <tr>
+                            <td>Deliverability State</td>
+                            <td>Can receive emails</td>
+                        </tr>
+                        <tr>
+                            <td>Confidence Score</td>
+                            <td>Moderate confidence</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Email Validator | All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
